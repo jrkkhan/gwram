@@ -9,7 +9,6 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
@@ -18,4 +17,55 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.hero {
+  align-items: center;
+  background: #d5d2ec;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  padding-block: 150px 100px;
+  position: relative;
+}
+
+.hero:after {
+  background: url(/images/bg_shape.39b75cfa769164d5a083.svg) no-repeat;
+  background-size: contain;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.hero:before {
+  background: #c200ff26;
+  content: "";
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.hero .video_wrapper {
+  height: 100%;
+  left: 2%;
+  position: relative;
+  position: absolute;
+  top: -6px;
+  width: 100%;
+  z-index: 1;
+}
+
+.gg-header {
+  left: 0;
+  padding-block: 5px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: .3sease-in-out;
+  width: 100%;
+  z-index: 99;
 }
