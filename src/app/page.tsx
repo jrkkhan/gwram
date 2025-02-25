@@ -34,6 +34,10 @@ export default function Home() {
 
         </section>
       </div>
+
+      <div className="h-96">
+
+      </div>
     </div>
   );
 }
